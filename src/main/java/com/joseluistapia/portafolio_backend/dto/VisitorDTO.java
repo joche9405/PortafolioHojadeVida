@@ -6,5 +6,6 @@ import lombok.Data;
 public class VisitorDTO {
     private String nombre;
     private String correo;
+    private String mensaje;
 
 }

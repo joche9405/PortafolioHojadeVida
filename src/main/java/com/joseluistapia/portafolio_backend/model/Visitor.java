@@ -16,4 +16,5 @@ public class Visitor {
     private LocalDateTime fechaVisita;
     private String ip;
     private String userAgent;
+    private String mensaje;
 }

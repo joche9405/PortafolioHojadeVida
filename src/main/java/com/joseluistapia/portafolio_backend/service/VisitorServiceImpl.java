@@ -24,6 +24,7 @@ public class VisitorServiceImpl implements VisitorService {
 
         visitor.setNombre(dto.getNombre());
         visitor.setCorreo(dto.getCorreo());
+        visitor.setMensaje(dto.getMensaje());
         visitor.setFechaVisita(LocalDateTime.now());
         visitor.setIp(ip);
         visitor.setUserAgent(userAgent);
