@@ -1,5 +1,7 @@
 package com.joseluistapia.portafolio_backend.controller;
 
+import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,6 +41,11 @@ public class VisitorController {
   @GetMapping("/count")
   public ResponseEntity<Long> countVisitors() {
     return ResponseEntity.ok(visitorService.countVisitors());
+  }
+
+  @GetMapping
+  public ResponseEntity<List<Visitor>> getAllVisitors() {
+    return ResponseEntity.ok(visitorService.getAllVisitors());
   }
 
 }
