@@ -5,6 +5,7 @@ import com.joseluistapia.portafolio_backend.dto.VisitorDTO;
 import com.joseluistapia.portafolio_backend.model.Visitor;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import org.springframework.stereotype.Service;
 
@@ -32,5 +33,9 @@ public class VisitorServiceImpl implements VisitorService {
 
     public long countVisitors() {
         return visitorRepository.count();
+    }
+
+    public List<Visitor> getAllVisitors() {
+        return visitorRepository.findAll();
     }
 }
