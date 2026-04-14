@@ -10,7 +10,6 @@ import com.joseluistapia.portafolio_backend.service.ProfileService;
 
 @RestController
 @RequestMapping("/api/profiles")
-@CrossOrigin(origins = "*")
 public class ProfileController {
     private final ProfileService profileService;
 

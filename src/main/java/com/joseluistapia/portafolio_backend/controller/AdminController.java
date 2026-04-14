@@ -10,7 +10,7 @@ import com.joseluistapia.portafolio_backend.service.AdminService;
 
 @RestController
 @RequestMapping("/api/admin")
-@CrossOrigin("*")
+
 public class AdminController {
 
     private final AdminService adminService;
